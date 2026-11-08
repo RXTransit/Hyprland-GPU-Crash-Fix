@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Hyprland (delayed)
+Exec=/usr/local/bin/hypr-session
+Type=Application

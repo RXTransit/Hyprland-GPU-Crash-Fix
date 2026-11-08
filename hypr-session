@@ -1,0 +1,8 @@
+#!/bin/sh
+# wait up to ~3s for greeter processes to disappear, then let logind settle
+for i in $(seq 30); do
+    pgrep -u greeter >/dev/null || break
+    sleep 0.1
+done
+sleep 0.3
+exec uwsm start hyprland.desktop
